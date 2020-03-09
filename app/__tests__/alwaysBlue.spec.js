@@ -15,7 +15,7 @@ describe("Example test", () => {
     }
   });
   test("it should always return blue", () => {
-    const input = "bluer"
+    const input = "blue"
 
     const output = blueOrNot(false);
 
