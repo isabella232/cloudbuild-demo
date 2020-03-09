@@ -11,3 +11,6 @@ git clone
 docker build . -t hello-k8s  
 docker run  -p 8181:8080 hello-k8s  
 http://127.0.0.1:8181/ 
+
+
+...
