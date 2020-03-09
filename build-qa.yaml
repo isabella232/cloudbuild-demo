@@ -2,4 +2,4 @@ steps:
     - name: node
       entrypoint: echo
       dir: app
-      args: [us.gcr.io/andy-playground-264516/hello-word-node-js:$SHORT_SHA']
+      args: ['us.gcr.io/andy-playground-264516/hello-word-node-js:$SHORT_SHA']
