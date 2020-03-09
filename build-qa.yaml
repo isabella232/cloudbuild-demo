@@ -1,5 +1,5 @@
 steps:
     - name: node
-      entrypoint: npm
+      entrypoint: echo
       dir: app
-      args: ['test']
+      args: [us.gcr.io/andy-playground-264516/hello-word-node-js:$SHORT_SHA']
