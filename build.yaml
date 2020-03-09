@@ -1,9 +1,9 @@
 steps:
-    - name: "npm install"
+    - name: node
       entrypoint: npm
       dir: app
       args: ['install']
-    - name: "unit test"
+    - name: node
       entrypoint: npm
       dir: app
       args: ['test']
