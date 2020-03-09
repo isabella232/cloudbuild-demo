@@ -1,5 +1,5 @@
 describe("Example test", () => {
-  function blueOrNot(shouldThrow = false) {
+  const blueOrNot = (shouldThrow = false) => {
       if (shouldThrow) {
         console.log(shouldThrow);
         throw new Error('shouldThrow was true');
