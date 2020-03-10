@@ -14,7 +14,7 @@ exports.slackSimpleAlert = (event, context) => {
         const options = {
             hostname: 'hooks.slack.com',
             port: 443,
-            path: '/services/TDE9A8BA8/BT5CY28VA/f3YkyzuJsntHexVYpJav4oME',
+            path: '<incoming web hook URL>',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
