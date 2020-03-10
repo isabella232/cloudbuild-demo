@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: hello-kubernetes
-        image: paulbouwer/hello-kubernetes:1.7
+        image: us.gcr.io/andy-playground-264516/hello-word-node-js:7a4ee4f
         ports:
         - containerPort: 8080

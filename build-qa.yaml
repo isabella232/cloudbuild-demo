@@ -3,3 +3,10 @@ steps:
       entrypoint: echo
       dir: app
       args: ['us.gcr.io/andy-playground-264516/hello-word-node-js:$SHORT_SHA']
+    - name: "gcr.io/cloud-builders/gke-deploy"
+      args:
+      - run
+      - --filename=./kubernetes/hello-kubernetes.yaml
+      - --image=us.gcr.io/andy-playground-264516/hello-word-node-js:$SHORT_SHA
+      - --location=us-ccentral1
+      - --cluster=fake-prod-cluster
