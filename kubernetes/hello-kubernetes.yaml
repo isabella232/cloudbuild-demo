@@ -30,5 +30,5 @@ spec:
         ports:
         - containerPort: 8080
         env:
-          name: MESSAGE
+        - name: MESSAGE
           value: "Hell0 W0rld!!!..!!"
