@@ -8,5 +8,5 @@ steps:
       - run
       - --filename=./kubernetes/hello-kubernetes.yaml
       - --image=us.gcr.io/andy-playground-264516/hello-word-node-js:$SHORT_SHA
-      - --location=us-ccentral1
+      - --location=us-central1-c
       - --cluster=fake-prod-cluster
