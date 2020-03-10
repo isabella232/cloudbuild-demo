@@ -29,3 +29,6 @@ spec:
         image: us.gcr.io/andy-playground-264516/hello-word-node-js:7a4ee4f
         ports:
         - containerPort: 8080
+        env:
+          name: MESSAGE
+          value: "Hell0 W0rld!!!..!!"
