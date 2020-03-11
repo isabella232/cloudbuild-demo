@@ -13,4 +13,11 @@ docker run  -p 8181:8080 hello-k8s
 http://127.0.0.1:8181/ 
 
 
-..
+# devOps Principles 
+Teams modeled around business domain  
+Culture of automation  
+Hide implementation details  
+De centralize all things  
+Deploy independently  
+Consumer first  
+Isolate failure  
