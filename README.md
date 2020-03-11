@@ -22,10 +22,11 @@ Deploy independently
 Consumer first  
 Isolate failure  
 
-# suggestions
-build the dev, qa, stage, production environment deployments before your write code  
-share the responsibility of the CI/CD pipeline care and feeding  
-try new things in the CI/CD pipeline, CI/CD has a lot of moving parts and is used a lot, so take risks with it and learn how to support new features in CI/CD before going to higher environments  
+# Andy Powell Suggestions
+- Guard rails vs. road blocks == protect releases but don't add manual steps/approavals just for confidence (use tests and automation instead to build confidence)  
+- Build the dev, qa, stage, production environment deployments before your write code  
+- Share the responsibility of the CI/CD pipeline care and feeding  
+- Try new things in the CI/CD pipeline, CI/CD has a lot of moving parts and is used a lot, so take risks with it and learn how to support new features in CI/CD before going to higher environments  
 
 
 # encrypt env file
