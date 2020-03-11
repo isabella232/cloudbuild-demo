@@ -1,6 +1,6 @@
 # cloudbuild-demo
 
-a project to demonstrate ci-cd with cloud build and helm deploys on GKE  
+a project to demonstrate ci-cd with cloud build and deploys on GKE  
 
 application from https://github.com/paulbouwer/hello-kubernetes/  
 
