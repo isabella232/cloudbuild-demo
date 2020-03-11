@@ -14,9 +14,9 @@ steps:
         - --keyring=cloudbuild-demo-keyring
         - --key=cloudbuild-demo-env
     - name: node
-      entrypoint: echo
-      dir: app
-      args: ['SECRET_TOKEN: $SECRET_TOKEN']
+      entrypoint: cat
+      dir: /
+      args: ['.env']
     - name: "gcr.io/cloud-builders/gke-deploy"
       args:
       - run
