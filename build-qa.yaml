@@ -1,11 +1,11 @@
 steps:
     - name: node
-      entrypoint: echo
+      entrypoint: ls 
       dir: app
-      args: ['us.gcr.io/andy-playground-264516/hello-word-node-js:$SHORT_SHA']
+      args: ['-l']
     - name: gcr.io/cloud-builders/gcloud
-      dir: /
-      args:
+    dir: app
+    args:
         - kms
         - decrypt
         - --ciphertext-file=.env.enc
