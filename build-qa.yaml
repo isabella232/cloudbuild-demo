@@ -4,8 +4,8 @@ steps:
       dir: app
       args: ['-l']
     - name: gcr.io/cloud-builders/gcloud
-    dir: app
-    args:
+      dir: app
+      args:
         - kms
         - decrypt
         - --ciphertext-file=.env.enc
