@@ -4,7 +4,7 @@ describe("Example test", () => {
         console.log(shouldThrow);
         throw new Error('shouldThrow was true');
       }
-      return 'bluerrr';
+      return 'blue';
   }
 
   it('should throw if passed true', () => {
