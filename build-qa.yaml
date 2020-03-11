@@ -3,6 +3,20 @@ steps:
       entrypoint: echo
       dir: app
       args: ['us.gcr.io/andy-playground-264516/hello-word-node-js:$SHORT_SHA']
+    - name: gcr.io/cloud-builders/gcloud
+      dir: /
+      args:
+        - kms
+        - decrypt
+        - --ciphertext-file=.env.enc
+        - --plaintext-file=.env
+        - --location=global
+        - --keyring=cloudbuild-demo-keyring
+        - --key=cloudbuild-demo-env
+    - name: node
+      entrypoint: echo
+      dir: app
+      args: ['SECRET_TOKEN: $SECRET_TOKEN']
     - name: "gcr.io/cloud-builders/gke-deploy"
       args:
       - run
