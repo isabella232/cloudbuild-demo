@@ -38,3 +38,4 @@ gcloud kms encrypt \
   --key=cloudbuild-demo-env
 ```
 
+.
