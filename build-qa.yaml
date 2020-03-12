@@ -13,10 +13,13 @@ steps:
         - --location=global
         - --keyring=cloudbuild-demo-keyring
         - --key=cloudbuild-demo-env
-    # - name: node
-    #   entrypoint: cat
-    #   dir: /
-    #   args: ['.env']
+    - name: node
+      entrypoint: cat
+      dir: ./
+      args: ['.env']
+    - name: node
+      entrypoint: printenv
+      args: []
     - name: "gcr.io/cloud-builders/gke-deploy"
       args:
       - run
