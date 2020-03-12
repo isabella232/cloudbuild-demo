@@ -1,10 +1,10 @@
 steps:
     - name: node
       entrypoint: ls 
-      dir: /
+      dir: ./
       args: ['-l']
     - name: gcr.io/cloud-builders/gcloud
-      dir: /
+      dir: ./
       args:
         - kms
         - decrypt
