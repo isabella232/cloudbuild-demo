@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: hello-kubernetes
-        image: us.gcr.io/andy-playground-264516/hello-word-node-js:fake-tag
+        image: paulbouwer/hello-kubernetes:1.7
         ports:
         - containerPort: 8080
         env:
