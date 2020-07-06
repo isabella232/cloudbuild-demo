@@ -2,7 +2,17 @@
 
 a project to demonstrate ci-cd with cloud build and deploys on GKE  
 
-application from https://github.com/paulbouwer/hello-kubernetes/  
+demo application from https://github.com/paulbouwer/hello-kubernetes/  
+
+# Continious Integration
+- fast feedback for breaking changes
+- basic merge of features into main branch, and limited (and fasst) unit tests, linting, and feedback about the format of the changes
+
+# Longer running
+
+![alt text](./img/value-stream.png "Logo Title Text 1")
+
+
 
 
 # local dev
@@ -11,6 +21,8 @@ git clone
 docker build . -t hello-k8s  
 docker run  -p 8181:8080 hello-k8s  
 http://127.0.0.1:8181/ 
+
+# 
 
 
 # devOps Principles 
