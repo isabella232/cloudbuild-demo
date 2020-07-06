@@ -6,12 +6,9 @@ demo application from https://github.com/paulbouwer/hello-kubernetes/
 
 # Continious Integration
 - fast feedback for breaking changes
-- basic merge of features into main branch, and limited (and fasst) unit tests, linting, and feedback about the format of the changes
+- basic merge of features into main branch, and limited (and fast) unit tests, linting, and feedback about the format of the changes
 
-# Longer running
-
-![alt text](./img/value-stream.png "Logo Title Text 1")
-
+![alt text](./img/value-stream.png "Logo Title Text 1")  
 
 
 
